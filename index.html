@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Canteen Queue Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Canteen</h1>
+        <div id="menu">
+            <h2>Menu</h2>
+            <div class="section" id="breakfast">
+                <h3>Breakfast</h3>
+                <div class="item" data-name="Idli" data-price="10.00" data-time="10" data-available="true">
+                    <span>Idli - ₹10.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Dosa" data-price="20.00" data-time="15" data-available="true">
+                    <span>Dosa - ₹20.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Upma" data-price="15.00" data-time="10" data-available="true">
+                    <span>Upma - ₹15.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Poha" data-price="12.00" data-time="10" data-available="true">
+                    <span>Poha - ₹12.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+            </div>
+            <div class="section" id="lunch">
+                <h3>Lunch</h3>
+                <div class="item" data-name="Rice and Curry" data-price="50.00" data-time="20" data-available="true">
+                    <span>Rice and Curry - ₹50.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Chapati and Sabzi" data-price="30.00" data-time="15" data-available="true">
+                    <span>Chapati and Sabzi - ₹30.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Pulao" data-price="40.00" data-time="20" data-available="true">
+                    <span>Pulao - ₹40.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Biryani" data-price="60.00" data-time="30" data-available="true">
+                    <span>Biryani - ₹60.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+            </div>
+            <div class="section" id="snacks">
+                <h3>Snacks</h3>
+                <div class="item" data-name="Fries" data-price="2.00" data-time="5" data-available="true">
+                    <span>Fries - ₹2.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Burger" data-price="3.50" data-time="10" data-available="true">
+                    <span>Burger - ₹3.50</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Pazham Pori" data-price="7.00" data-time="10" data-available="true">
+                    <span>Pazham Pori - ₹7.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Cutlet" data-price="15.00" data-time="15" data-available="true">
+                    <span>Cutlet - ₹15.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Chicken Roll" data-price="15.00" data-time="15" data-available="true">
+                    <span>Chicken Roll - ₹15.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Egg Puffs" data-price="18.00" data-time="15" data-available="true">
+                    <span>Egg Puffs - ₹18.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Parippuvada" data-price="7.00" data-time="10" data-available="true">
+                    <span>Parippuvada - ₹7.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+            </div>
+            <div class="section" id="drinks">
+                <h3>Drinks</h3>
+                <div class="item" data-name="Cola" data-price="1.50" data-time="2" data-available="true">
+                    <span>Cola - ₹1.50</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Water" data-price="1.00" data-time="1" data-available="true">
+                    <span>Water - ₹1.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Tea" data-price="7.00" data-time="5" data-available="true">
+                    <span>Tea - ₹7.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Coffee" data-price="15.00" data-time="10" data-available="true">
+                    <span>Coffee - ₹15.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Horlicks" data-price="15.00" data-time="10" data-available="true">
+                    <span>Horlicks - ₹15.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Boost" data-price="18.00" data-time="15" data-available="true">
+                    <span>Boost - ₹18.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+                <div class="item" data-name="Lime" data-price="7.00" data-time="5" data-available="true">
+                    <span>Lime - ₹7.00</span>
+                    <span>Status: <span class="available">Available</span></span>
+                    <input type="number" value="0" min="0" class="quantity" placeholder="Qty">
+                </div>
+            </div>
+        </div>
+        <div id="order-summary">
+            <h2>Order Summary</h2>
+            <div id="summary-items"></div>
+            <div>Total: ₹<span id="total-price">0.00</span></div>
+            <div>Estimated Time: <span id="estimated-time">0</span> minutes</div>
+            <button id="pay-button">Pay Now</button>
+            <div id="payment-status"></div>
+        </div>
+    </div>
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Select Payment Method</h2>
+            <div class="payment-option" id="upi-option">
+                <h3>UPI ID</h3>
+                <input type="text" placeholder="Enter UPI ID" id="upi-id">
+            </div>
+            <div class="payment-option" id="qr-code-option">
+                <h3>QR Code</h3>
+                <img src="qr-code-placeholder.png" alt="QR Code" id="qr-code">
+                <p>Scan this QR code to pay.</p>
+            </div>
+            <div class="payment-option" id="card-option">
+                <h3>Card Payment</h3>
+                <input type="text" placeholder="Card Number" id="card-number">
+                <input type="text" placeholder="Expiry Date" id="expiry-date">
+                <input type="text" placeholder="CVV" id="cvv">
+            </div>
+            <button id="confirm-payment">Confirm Payment</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
